@@ -14,10 +14,13 @@ class MainApp(MDApp):
     ## KivyMD build function
     def build(self):
         self.title = 'KivyMD Quiz App'
-        
+
     
     ## KivyMD on_start function
     def on_start(self):
+        self.theme_cls.theme_style_switch_animation = True
+        self.theme_cls.theme_style = "Dark"
+        self.theme_cls.primary_palette = "White"
         self.root.current = 'homeScreenPage'
         
   

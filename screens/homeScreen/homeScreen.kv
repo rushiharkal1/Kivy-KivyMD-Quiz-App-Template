@@ -1,6 +1,80 @@
+#: include screens/menuScreen/menuScreen.kv
+
+
+ScreenManager:
+	
+	MenuScreen:
+		name: 'menuScreenPage'
+		
+
 <HomeScreen>
 	
-	Label:
-		text: 'HomeScreenPage'
-		pos_hint: {'center_x': .5, 'center_y': .5}
-		color: 'red'
+	md_bg_color: self.theme_cls.backgroundColor
+	
+	MDBoxLayout:
+		orientation: 'vertical'
+		spacing: dp(10)
+		padding: dp(10)
+	
+		
+		MDTopAppBar:
+			size_hint_x: 1.0
+			
+				
+			MDTopAppBarLeadingButtonContainer:
+					
+				MDActionTopAppBarButton:
+					icon: "github"
+					on_release: root.open_GitHub_Repo()
+						
+			MDTopAppBarTitle:
+				
+				text: "HomeScreen"
+					
+			MDTopAppBarTrailingButtonContainer:
+						
+				MDActionTopAppBarButton:
+					on_release: root.switch_theme_style()
+					icon: "theme-light-dark"
+		
+		MDBoxLayout:
+			orientation: "vertical"
+			size_hint_y: .5
+	
+			MDCard:
+				orientation: "vertical"
+				padding: 0, 0, 0 , "36dp"
+				size_hint: .8, .4
+				style: "elevated"
+				pos_hint: {"center_x": .5, "center_y": .5}
+			 
+				MDLabel:
+					text: "Kivy/KivyMD Quiz App Template"
+					halign: "center"
+					valign: "center"
+					bold: True
+					font_style: "Display"
+					role: "small"
+					
+		
+		MDFloatLayout:	
+			size_hint_y: .2
+			
+			MDButton:
+				style: "outlined"
+				theme_width: "Custom"
+				size_hint_x: .4
+				height: "45dp"
+				radius: [5]
+				pos_hint: {"center_x": .5, "center_y": .5}
+				
+				on_release: root.load_Menu_Screen()
+					
+				MDButtonText:
+					pos_hint: {"center_x": .5, "center_y": .5}
+					text: "MENU"
+					bold: True
+					font_style: "Body"
+					role: "large"
+					
+					

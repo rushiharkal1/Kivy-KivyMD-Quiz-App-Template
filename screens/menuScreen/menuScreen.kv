@@ -1,0 +1,115 @@
+<MenuScreen>
+
+	
+	md_bg_color: self.theme_cls.backgroundColor
+	
+	MDBoxLayout:
+		orientation: 'vertical'
+		spacing: dp(10)
+		padding: dp(10)
+	
+		
+		MDTopAppBar:
+			size_hint_x: 1.0
+				
+			MDTopAppBarLeadingButtonContainer:
+					
+				MDActionTopAppBarButton:
+					icon: "arrow-right"
+						
+			MDTopAppBarTitle:
+				text: "MenuScreen"
+					
+			MDTopAppBarTrailingButtonContainer:
+						
+				MDActionTopAppBarButton:
+					icon: "information"
+					
+		
+		MDFloatLayout:
+		
+			MDButton:
+				style:"outlined"
+				pos_hint: {"center_x": .5, "center_y": .75}
+				radius: [5]
+				
+				theme_width: "Custom"
+				size_hint_x: .4
+				height: "45dp"
+				
+				MDButtonText:
+					pos_hint: {"center_x": .5, "center_y": .5}
+					text: "Start"
+					bold: True
+					font_style: "Body"
+					role: "large"
+					
+					
+			MDButton:
+				style:"outlined"
+				pos_hint: {"center_x": .5, "center_y": .60}
+				radius: [5]
+				
+				theme_width: "Custom"
+				size_hint_x: .4
+				height: "45dp"
+				
+				MDButtonText:
+					pos_hint: {"center_x": .5, "center_y": .5}
+					text: "Leaderboard"
+					bold: True
+					font_style: "Body"
+					role: "large"
+					
+			
+			MDButton:
+				style:"outlined"
+				pos_hint: {"center_x": .5, "center_y": .45}
+				radius: [5]
+				
+				theme_width: "Custom"
+				size_hint_x: .4
+				height: "45dp"
+				
+				MDButtonText:
+					pos_hint: {"center_x": .5, "center_y": .5}
+					text: "Settings"
+					bold: True
+					font_style: "Body"
+					role: "large"
+					
+			MDButton:
+				style:"outlined"
+				pos_hint: {"center_x": .5, "center_y": .30}
+				radius: [5]
+				
+				theme_width: "Custom"
+				size_hint_x: .4
+				height: "45dp"
+				
+				MDButtonText:
+					pos_hint: {"center_x": .5, "center_y": .5}
+					text: "About"
+					bold: True
+					font_style: "Body"
+					role: "large"
+					
+			MDButton:
+				style:"outlined"
+				pos_hint: {"center_x": .5, "center_y": .15}
+				radius: [5]
+				
+				theme_width: "Custom"
+				size_hint_x: .4
+				height: "45dp"
+				
+				MDButtonText:
+					pos_hint: {"center_x": .5, "center_y": .5}
+					text: "Exit"
+					bold: True
+					font_style: 
+					font_style: "Body"
+					role: "large"
+					
+			
+			
